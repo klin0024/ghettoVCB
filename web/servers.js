@@ -1,0 +1,3 @@
+var servers=[
+    'vcs01',
+];
