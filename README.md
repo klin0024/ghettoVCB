@@ -14,7 +14,7 @@ $ ssh-copy-id root@< ESXI IP > <br />
 ### 4. 登入Esx/Esxi,將公鑰輸入到特定檔案
 \# cat .ssh/authorized_keys >> /etc/ssh/keys-root/authorized_keys
 ### 5. 切換到/backup,執行git clone
-$ git clone https://github.com/klin0024/ghettoVCB.git
+$ cd /backup; git clone https://github.com/klin0024/ghettoVCB.git
 ### 6. backup 目錄下有 backup.py, 是虛擬機備份主執行檔
 $ python backup/backup.py –s < IP Address > –b < Backup Name >
 ### 7. 第一次執行,會在 vm_list目錄下建立 虛擬機備份清單, 編輯 虛擬機備份清單
