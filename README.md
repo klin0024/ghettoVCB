@@ -15,13 +15,13 @@ $ ssh-copy-id root@< ESXI IP > <br />
 \# cat .ssh/authorized_keys >> /etc/ssh/keys-root/authorized_keys
 ### 5. 切換到/backup,執行git clone
 $ git clone https://github.com/klin0024/ghettoVCB.git
-### 6. backup 目錄下有 backup.py, 是備份執行檔
+### 6. backup 目錄下有 backup.py, 是虛擬機備份主執行檔
 $ python backup/backup.py –s < IP Address > –b < Backup Name >
-### 7. 第一次執行,會在 vm_list目錄下建立VM備份清單, 編輯VM備份清單
+### 7. 第一次執行,會在 vm_list目錄下建立 虛擬機備份清單, 編輯 虛擬機備份清單
 $ vi vm_list/< Backup Name >.list <br />
 VM-1 <br />
 \#VM-2 <br />	
-### 8. 再次執行VM備份
+### 8. 再次執行虛擬機備份
 $ python backup/backup.py –s < IP Address > –b < Backup Name >
 ### 9. 備份完成後, Dashboard會顯示備份狀態
 ![image](img/dashboard.JPG?raw=true "Dashboard") <br />
